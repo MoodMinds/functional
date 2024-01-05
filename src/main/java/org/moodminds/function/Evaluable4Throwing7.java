@@ -51,4 +51,85 @@ public interface Evaluable4Throwing7<X1, X2, X3, X4, V, E1 extends Exception, E2
     default <R> Evaluable4Throwing7<X1, X2, X3, X4, R, E1, E2, E3, E4, E5, E6, E7> then(Evaluable1Throwing8<? super V, ? extends R, ? extends E1, ? extends E2, ? extends E3, ? extends E4, ? extends E5, ? extends E6, ? extends E7, ? extends E7> after) {
         return ((Evaluable1Throwing8<V, R, E1, E2, E3, E4, E5, E6, E7, E7>) after::eval).after(this)::eval;
     }
+
+
+    /**
+     * Return an operation that always returns its input argument 1.
+     *
+     * @param <V1> the type of input 1
+     * @param <V2> the type of input 2
+     * @param <V3> the type of input 3
+     * @param <V4> the type of input 4
+     * @param <E1> the type of possible exception 1 that might be thrown
+     * @param <E2> the type of possible exception 2 that might be thrown
+     * @param <E3> the type of possible exception 3 that might be thrown
+     * @param <E4> the type of possible exception 4 that might be thrown
+     * @param <E5> the type of possible exception 5 that might be thrown
+     * @param <E6> the type of possible exception 6 that might be thrown
+     * @param <E7> the type of possible exception 7 that might be thrown
+     * @return an operation that always returns its input argument 1
+     */
+    static <V1, V2, V3, V4, E1 extends Exception, E2 extends Exception, E3 extends Exception, E4 extends Exception, E5 extends Exception, E6 extends Exception, E7 extends Exception> Evaluable4Throwing7<V1, V2, V3, V4, V1, E1, E2, E3, E4, E5, E6, E7> identity1() {
+        return Evaluable4Throwing8.<V1, V2, V3, V4, E1, E2, E3, E4, E5, E6, E7, E7>identity1()::eval;
+    }
+
+    /**
+     * Return an operation that always returns its input argument 2.
+     *
+     * @param <V1> the type of input 1
+     * @param <V2> the type of input 2
+     * @param <V3> the type of input 3
+     * @param <V4> the type of input 4
+     * @param <E1> the type of possible exception 1 that might be thrown
+     * @param <E2> the type of possible exception 2 that might be thrown
+     * @param <E3> the type of possible exception 3 that might be thrown
+     * @param <E4> the type of possible exception 4 that might be thrown
+     * @param <E5> the type of possible exception 5 that might be thrown
+     * @param <E6> the type of possible exception 6 that might be thrown
+     * @param <E7> the type of possible exception 7 that might be thrown
+     * @return an operation that always returns its input argument 2
+     */
+    static <V1, V2, V3, V4, E1 extends Exception, E2 extends Exception, E3 extends Exception, E4 extends Exception, E5 extends Exception, E6 extends Exception, E7 extends Exception> Evaluable4Throwing7<V1, V2, V3, V4, V2, E1, E2, E3, E4, E5, E6, E7> identity2() {
+        return Evaluable4Throwing8.<V1, V2, V3, V4, E1, E2, E3, E4, E5, E6, E7, E7>identity2()::eval;
+    }
+
+    /**
+     * Return an operation that always returns its input argument 3.
+     *
+     * @param <V1> the type of input 1
+     * @param <V2> the type of input 2
+     * @param <V3> the type of input 3
+     * @param <V4> the type of input 4
+     * @param <E1> the type of possible exception 1 that might be thrown
+     * @param <E2> the type of possible exception 2 that might be thrown
+     * @param <E3> the type of possible exception 3 that might be thrown
+     * @param <E4> the type of possible exception 4 that might be thrown
+     * @param <E5> the type of possible exception 5 that might be thrown
+     * @param <E6> the type of possible exception 6 that might be thrown
+     * @param <E7> the type of possible exception 7 that might be thrown
+     * @return an operation that always returns its input argument 3
+     */
+    static <V1, V2, V3, V4, E1 extends Exception, E2 extends Exception, E3 extends Exception, E4 extends Exception, E5 extends Exception, E6 extends Exception, E7 extends Exception> Evaluable4Throwing7<V1, V2, V3, V4, V3, E1, E2, E3, E4, E5, E6, E7> identity3() {
+        return Evaluable4Throwing8.<V1, V2, V3, V4, E1, E2, E3, E4, E5, E6, E7, E7>identity3()::eval;
+    }
+
+    /**
+     * Return an operation that always returns its input argument 4.
+     *
+     * @param <V1> the type of input 1
+     * @param <V2> the type of input 2
+     * @param <V3> the type of input 3
+     * @param <V4> the type of input 4
+     * @param <E1> the type of possible exception 1 that might be thrown
+     * @param <E2> the type of possible exception 2 that might be thrown
+     * @param <E3> the type of possible exception 3 that might be thrown
+     * @param <E4> the type of possible exception 4 that might be thrown
+     * @param <E5> the type of possible exception 5 that might be thrown
+     * @param <E6> the type of possible exception 6 that might be thrown
+     * @param <E7> the type of possible exception 7 that might be thrown
+     * @return an operation that always returns its input argument 4
+     */
+    static <V1, V2, V3, V4, E1 extends Exception, E2 extends Exception, E3 extends Exception, E4 extends Exception, E5 extends Exception, E6 extends Exception, E7 extends Exception> Evaluable4Throwing7<V1, V2, V3, V4, V4, E1, E2, E3, E4, E5, E6, E7> identity4() {
+        return Evaluable4Throwing8.<V1, V2, V3, V4, E1, E2, E3, E4, E5, E6, E7, E7>identity4()::eval;
+    }
 }
